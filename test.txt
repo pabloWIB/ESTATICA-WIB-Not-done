@@ -1,0 +1,77 @@
+<div class="capa1">
+
+					<div>
+						<div></div>
+					</div>
+					<div>
+						<div">
+							<div>
+								<div>
+									<a href="">Work</a>
+									<a href="">Services</a>
+									<a href="">About</a>
+								</div>
+								<div>
+									<a href="">Start a project</a>
+								</div>
+							</div>
+							<div>
+								<div>
+									<h4>Strategic <br> design partner</h4>
+								</div>
+								<div>
+									<h4>• Digital <br>production house</h4>
+								</div>
+							</div>
+							<div>
+								<h2>Creating succsesful digital campaings for companies of all sizes.</h2>
+							</div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+
+
+				</div>
+
+                 .capa1, .capa2{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    z-index: 8;
+                    >:nth-child(1){
+                        width: 50%;
+                        height: 100%;
+                        >:nth-child(1){
+                            height: 100%;
+                            width: 100%;
+                            background-image: url('../IMG/1612880787531.jpeg') ;
+                            background-size: cover;
+                        }
+                    }
+                    >:nth-child(2){
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: flex-end;
+                        width: 50%;
+                        >:nth-child(1){
+                            display: flex;
+                            flex-flow: column wrap;
+                            justify-content: space-between;
+                            width: 80%;
+                            height: 100%;
+                            >:nth-child(1){
+                                display: flex;
+                                flex-flow: row wrap;
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
