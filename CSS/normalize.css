@@ -5,5 +5,5 @@ img::selection, span::selection, div::selection, button::selection, br::selectio
 }
 
 *{
-  transition: .3s;
+  transition: .25s;
 }

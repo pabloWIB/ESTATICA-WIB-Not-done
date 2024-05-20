@@ -1,0 +1,66 @@
+:root { 
+    --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+}
+ 
+.link {
+    position: relative;
+    display: inline-flex;
+    .link-click {
+        cursor: pointer;
+    }
+    .link-click::before {
+        content: "";
+        position: absolute;
+        bottom: 0em;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        transform-origin: right;
+        transition: transform var(--animation-primary);
+        transform: scaleX(0);
+     }
+    .link-click:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .link-click::after, .link-click::before {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.alt{
+    .link-click::before{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        transform-origin: left;
+        transition: transform var(--animation-primary);
+        transform: scaleX(1) rotate(0.001deg);
+        transition-delay: 0.3s;
+    } 
+    .link-click:hover::before{
+        transform-origin: right;
+        transform: scaleX(0);
+        transition-delay: 0s;
+    }
+    .link-click::after{
+        content: "";
+        position: absolute;
+        bottom: 0em;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        transform-origin: right;
+        transition: transform var(--animation-primary);
+        transform: scaleX(0);
+        transition-delay: 0s;
+    }
+    .link-click:hover::after{
+        transform-origin: left;
+        transform: scaleX(1);
+        transition-delay: 0.3s;
+    }
+}
+ 

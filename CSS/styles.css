@@ -25,7 +25,10 @@ body header {
 body header > :nth-child(1), body header > :nth-child(2), body header > :nth-child(3) {
   width: 100%;
   height: 100vh;
-  background: rgb(255, 197, 197);
+  background: rgb(251, 255, 197);
+}
+body header > :nth-child(2) {
+  background: rgb(255, 73, 103);
 }
 body header .capaA {
   height: 100%;
@@ -40,7 +43,6 @@ body header .capaA {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: rgb(203, 147, 147);
 }
 body header .capaA .capaB {
   height: 100%;
@@ -54,7 +56,7 @@ body header .capaA .capaB {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-body header .capaA .capaB .capa1, body header .capaA .capaB .capa2 {
+body header .capaA .capaB .capa1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -68,101 +70,53 @@ body header .capaA .capaB .capa1, body header .capaA .capaB .capa2 {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-body header .capaA .capaB .capa1 > :nth-child(1), body header .capaA .capaB .capa1 > :nth-child(2), body header .capaA .capaB .capa2 > :nth-child(1), body header .capaA .capaB .capa2 > :nth-child(2) {
+body header .capaA .capaB .capa1 > :nth-child(1), body header .capaA .capaB .capa1 > :nth-child(2) {
   width: 50%;
   height: 100%;
 }
 body header .capaA .capaB .capa1 {
-  z-index: 2;
-  background: green;
+  z-index: 1;
 }
 body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) {
   background: url("../IMG/1612880787531.jpeg");
   height: 100%;
   width: 100%;
   background-size: cover;
+  position: relative;
 }
-body header .capaA .capaB .capa1 > :nth-child(2) {
+body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) {
-  width: 90%;
-  background: rgb(246, 45, 45);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  place-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: exclusion;
 }
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 95%;
-  width: 95%;
-  background: white;
+body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner h4 {
+  color: rgb(255, 255, 255);
 }
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner h4::-moz-selection {
+  background: none;
 }
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) a {
-  all: unset;
+body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner h4::selection {
+  background: none;
 }
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  gap: 2rem;
-  background: red;
-}
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) h4 {
-  all: unset;
-}
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) {
-  background: orange;
-}
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) h2 {
-  all: unset;
-  font-size: 2.5rem;
+body header .capaA .capaB .capa1 > :nth-child(2) {
+  background: wheat;
+  mix-blend-mode: darken;
 }
 body header .capaA .capaB .capa2 {
-  z-index: 10;
+  z-index: 2;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -172,89 +126,190 @@ body header .capaA .capaB .capa2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .capaA .capaB .capa2 > :nth-child(1), body header .capaA .capaB .capa2 > :nth-child(2), body header .capaA .capaB .capa2 > :nth-child(3) {
+  background: white;
 }
 body header .capaA .capaB .capa2 > :nth-child(1) {
-  background: orange;
-  height: 30%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-body header .capaA .capaB .capa2 > :nth-child(1) > :nth-child(1) {
-  width: 30%;
-  background: red;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-}
-body header .capaA .capaB .capa2 > :nth-child(1) > :nth-child(1) p {
-  all: unset;
+  height: 30.6%;
+  width: 50%;
 }
 body header .capaA .capaB .capa2 > :nth-child(2) {
-  background: orange;
-  height: 40%;
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  place-content: center;
+  height: 30.8%;
+  width: 65.25%;
 }
 body header .capaA .capaB .capa2 > :nth-child(2) > :nth-child(1) {
-  width: 90%;
-  height: 50%;
-  background: white;
-  overflow: hidden;
+  height: 100%;
+  width: 23.4%;
+  text-align: center;
 }
 body header .capaA .capaB .capa2 > :nth-child(2) > :nth-child(1) span {
   all: unset;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 body header .capaA .capaB .capa2 > :nth-child(3) {
-  background: orange;
-  height: 30%;
-  width: 85%;
+  height: 38.6%;
+  width: 83.3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  place-content: center;
 }
 body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) {
-  width: 98%;
+  width: 100%;
   height: 90%;
-  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   place-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
 }
-body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) h1 {
+body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 90%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(1) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(2) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(3) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(4) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(5) h2,
+body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(6) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(7) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(8) h2 {
   all: unset;
-  letter-spacing: 2rem;
-  font-size: 9rem;
+  font-size: 7.7rem;
+}
+
+.the-grid .col:nth-child(2) {
+  -webkit-transition-delay: 0.025s;
+          transition-delay: 0.025s;
+}
+
+.the-grid .col:nth-child(3) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+
+.the-grid .col:nth-child(4) {
+  -webkit-transition-delay: 0.075s;
+          transition-delay: 0.075s;
+}
+
+.the-grid .col:nth-child(5) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.the-grid .col:nth-child(6) {
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+}
+
+.the-grid .col:nth-child(7) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.the-grid .col:nth-child(8) {
+  -webkit-transition-delay: 0.175s;
+          transition-delay: 0.175s;
+}
+
+.the-grid .col:nth-child(9) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.the-grid .col:nth-child(10) {
+  -webkit-transition-delay: 0.225s;
+          transition-delay: 0.225s;
+}
+
+.the-grid .col:nth-child(11) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.the-grid .col:nth-child(12) {
+  -webkit-transition-delay: 0.275s;
+          transition-delay: 0.275s;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+.row-reel {
+  width: 100%;
+  height: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.row-reel .col {
+  position: relative;
+  background: rgb(179, 179, 154);
+  overflow: hidden;
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.row-reel .col .magnetic-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: exclusion;
+}
+.row-reel .col .magnetic-inner h4 {
+  color: rgb(255, 255, 255);
+}
+.row-reel .bSide {
+  height: 100vh;
+  width: 50%;
 }

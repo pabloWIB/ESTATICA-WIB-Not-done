@@ -1,0 +1,90 @@
+:root {
+  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+}
+
+.link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.link .link-click {
+  cursor: pointer;
+}
+.link .link-click::before {
+  content: "";
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform var(--animation-primary);
+  transition: -webkit-transform var(--animation-primary);
+  transition: transform var(--animation-primary);
+  transition: transform var(--animation-primary), -webkit-transform var(--animation-primary);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+.link .link-click:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.link .link-click::after, .link .link-click::before {
+  background-color: rgb(0, 0, 0);
+}
+
+.alt .link-click::before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform var(--animation-primary);
+  transition: -webkit-transform var(--animation-primary);
+  transition: transform var(--animation-primary);
+  transition: transform var(--animation-primary), -webkit-transform var(--animation-primary);
+  -webkit-transform: scaleX(1) rotate(0.001deg);
+          transform: scaleX(1) rotate(0.001deg);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.alt .link-click:hover::before {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.alt .link-click::after {
+  content: "";
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform var(--animation-primary);
+  transition: -webkit-transform var(--animation-primary);
+  transition: transform var(--animation-primary);
+  transition: transform var(--animation-primary), -webkit-transform var(--animation-primary);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.alt .link-click:hover::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
