@@ -20,15 +20,11 @@ body header {
           align-items: center;
   position: relative;
   width: 100%;
-  height: 300vh;
 }
 body header > :nth-child(1), body header > :nth-child(2), body header > :nth-child(3) {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background: rgb(251, 255, 197);
-}
-body header > :nth-child(2) {
-  background: rgb(255, 73, 103);
 }
 body header .capaA {
   height: 100%;
@@ -43,6 +39,7 @@ body header .capaA {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  opacity: 40%;
 }
 body header .capaA .capaB {
   height: 100%;
@@ -57,6 +54,7 @@ body header .capaA .capaB {
           flex-flow: row wrap;
 }
 body header .capaA .capaB .capa1 {
+  z-index: 1;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -73,9 +71,6 @@ body header .capaA .capaB .capa1 {
 body header .capaA .capaB .capa1 > :nth-child(1), body header .capaA .capaB .capa1 > :nth-child(2) {
   width: 50%;
   height: 100%;
-}
-body header .capaA .capaB .capa1 {
-  z-index: 1;
 }
 body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) {
   background: url("../IMG/1612880787531.jpeg");
@@ -112,86 +107,168 @@ body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner
   background: none;
 }
 body header .capaA .capaB .capa1 > :nth-child(2) {
-  background: wheat;
+  background: rgb(198, 138, 27);
   mix-blend-mode: darken;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-body header .capaA .capaB .capa2 {
-  z-index: 2;
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  visibility: hidden;
-  opacity: 0;
-}
-body header .capaA .capaB .capa2 > :nth-child(1), body header .capaA .capaB .capa2 > :nth-child(2), body header .capaA .capaB .capa2 > :nth-child(3) {
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   background: white;
-}
-body header .capaA .capaB .capa2 > :nth-child(1) {
-  height: 30.6%;
-  width: 50%;
-}
-body header .capaA .capaB .capa2 > :nth-child(2) {
-  height: 30.8%;
-  width: 65.25%;
-}
-body header .capaA .capaB .capa2 > :nth-child(2) > :nth-child(1) {
   height: 100%;
-  width: 23.4%;
-  text-align: center;
+  width: 95%;
 }
-body header .capaA .capaB .capa2 > :nth-child(2) > :nth-child(1) span {
-  all: unset;
-  font-size: 1.1rem;
-}
-body header .capaA .capaB .capa2 > :nth-child(3) {
-  height: 38.6%;
-  width: 83.3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  place-content: center;
-}
-body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) {
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  height: 30.5%;
+  background-color: rgb(239, 69, 69);
   width: 100%;
-  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  height: 90%;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(1) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(2) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(3) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(4) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(5) h2,
-body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(6) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(7) h2, body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(8) h2 {
-  all: unset;
-  font-size: 7.7rem;
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .link {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .link .link-click {
+  cursor: pointer;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .link .link-click::before {
+  content: "";
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform var(--animation-primary);
+  transition: -webkit-transform var(--animation-primary);
+  transition: transform var(--animation-primary);
+  transition: transform var(--animation-primary), -webkit-transform var(--animation-primary);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .link .link-click:hover::before {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .link .link-click::after, body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .link .link-click::before {
+  background-color: rgb(0, 0, 0);
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .alt .link-click::before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform var(--animation-primary);
+  transition: -webkit-transform var(--animation-primary);
+  transition: transform var(--animation-primary);
+  transition: transform var(--animation-primary), -webkit-transform var(--animation-primary);
+  -webkit-transform: scaleX(1) rotate(0.001deg);
+          transform: scaleX(1) rotate(0.001deg);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .alt .link-click:hover::before {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .alt .link-click::after {
+  content: "";
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform var(--animation-primary);
+  transition: -webkit-transform var(--animation-primary);
+  transition: transform var(--animation-primary);
+  transition: transform var(--animation-primary), -webkit-transform var(--animation-primary);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .alt .link-click:hover::after {
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 2rem;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(2) {
+  height: 31.5%;
+  background-color: rgb(27, 243, 49);
+  width: 100%;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) {
+  height: 38%;
+  background-color: rgb(17, 208, 164);
+  width: 100%;
+}
+
+:root {
+  --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
 
 .the-grid .col:nth-child(2) {
@@ -312,4 +389,34 @@ html {
 .row-reel .bSide {
   height: 100vh;
   width: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 300vh;
+}
+footer > :nth-child(1), footer > :nth-child(2), footer > :nth-child(3) {
+  width: 100%;
+  background: rgb(251, 255, 197);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.animationN1 {
+  font-size: 2.5rem;
+  color: blue;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.animationN2 {
+  font-size: 2.5rem;
+  color: rgb(0, 255, 8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }

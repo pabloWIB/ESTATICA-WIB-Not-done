@@ -7,14 +7,10 @@ body{
         align-items: center;
         position: relative;
         width: 100%;
-        height: 300vh;  // POSIBILIDAD DE CAMBIAR LA ALTURA //
         >:nth-child(1), >:nth-child(2), >:nth-child(3){
             width: 100%;
-            height: 100vh;
+            height: 95vh;
             background: rgb(251, 255, 197);
-        }
-        >:nth-child(2){
-            background: rgb(255, 73, 103);
         }
         .capaA{
             height: 100%;
@@ -24,6 +20,7 @@ body{
             position: fixed;
             display: flex;
             flex-flow: row wrap;
+            opacity: 40%;
             .capaB{
                 height: 100%;
                 width: 100%;
@@ -31,6 +28,7 @@ body{
                 display: flex;
                 flex-flow: row wrap;
                 .capa1{
+                    z-index: 1;
                     position: absolute;
                     height: 100%;
                     width: 100%;
@@ -42,9 +40,6 @@ body{
                         width: 50%;
                         height: 100%;
                     }
-                }
-                .capa1{
-                    z-index: 1;
                     >:nth-child(1){
                         >:nth-child(1){
                             background: url('../IMG/1612880787531.jpeg');
@@ -73,73 +68,152 @@ body{
                         }
                     }
                     >:nth-child(2){
-                        background: wheat;
+                        background: rgb(198, 138, 27);
                         mix-blend-mode: darken;
-                    }
-                }
-                .capa2{
-                    z-index: 2;
-                    flex-flow: column;
-                    flex-wrap: wrap-reverse;
-                    justify-content: flex-end;
-                    visibility: hidden;
-                    opacity: 0;
-                    >:nth-child(1), >:nth-child(2), >:nth-child(3){
-                        background: white;
-                    }
-                    >:nth-child(1){
-                        height: 30.6%;
-                        width: 50%;
-                    }
-                    >:nth-child(2){
-                        height: 30.8%;
-                        width: 65.25%;
-                        >:nth-child(1){
-                            height: 100%;
-                            width: 23.4%;
-                            text-align: center;
-                            span{
-                                all: unset;
-                                font-size: 1.1rem;
-                            }
-                        }
-                    }
-                    >:nth-child(3){
-                        height: 38.6%;
-                        width: 83.3%;
                         display: flex;
                         align-items: center;
-                        place-content: center;
+                        justify-content: center;
                         >:nth-child(1){
-                            width: 100%;
-                            height: 90%;
                             display: flex;
-                            place-content: center;
-                            align-items: center;
-                            text-align: center;
+                            flex-flow: column wrap;
+                            background: white;
+                            height: 100%;
+                            width: 95%;
                             >:nth-child(1){
-                                display: flex;
-                                flex-flow: row nowrap;
-                                justify-content: space-around;
+                                // AQUÏ
+                                height: 30.5%;
+                                background-color: rgb(239, 69, 69);
                                 width: 100%;
-                                height: 90%;
-                                align-items: center;
-                                >:nth-child(1), >:nth-child(2), >:nth-child(3), >:nth-child(4), >:nth-child(5),
-                                >:nth-child(6), >:nth-child(7), >:nth-child(8){
-                                    // transform: translateY(155px);
-                                    h2{
-                                        all: unset;
-                                        font-size: 7.7rem;
+                                display: flex;
+                                flex-flow: column wrap;
+                                justify-content: space-between;
+                                >:nth-child(1){
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .link {
+                                        position: relative;
+                                        display: inline-flex;
+                                        .link-click {
+                                            cursor: pointer;
+                                        }
+                                        .link-click::before {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 0em;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            transform-origin: right;
+                                            transition: transform var(--animation-primary);
+                                            transform: scaleX(0);
+                                         }
+                                        .link-click:hover::before {
+                                            transform-origin: left;
+                                            transform: scaleX(1);
+                                        }
+                                        .link-click::after, .link-click::before {
+                                            background-color: rgb(0, 0, 0);
+                                        }
+                                    }
+                                    .alt{
+                                        .link-click::before{
+                                            position: absolute;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            background-color: black;
+                                            transform-origin: left;
+                                            transition: transform var(--animation-primary);
+                                            transform: scaleX(1) rotate(0.001deg);
+                                            transition-delay: 0.3s;
+                                        } 
+                                        .link-click:hover::before{
+                                            transform-origin: right;
+                                            transform: scaleX(0);
+                                            transition-delay: 0s;
+                                        }
+                                        .link-click::after{
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 0em;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 1px;
+                                            transform-origin: right;
+                                            transition: transform var(--animation-primary);
+                                            transform: scaleX(0);
+                                            transition-delay: 0s;
+                                        }
+                                        .link-click:hover::after{
+                                            transform-origin: left;
+                                            transform: scaleX(1);
+                                            transition-delay: 0.3s;
+                                        }
                                     }
                                 }
+                                >:nth-child(2){
+                                    display: flex;
+                                    flex-flow: row wrap;
+                                    gap: 2rem;
+                                }
+                            }
+                            >:nth-child(2){
+                                height: 31.5%;
+                                background-color: rgb(27, 243, 49);
+                                width: 100%;
+                            }
+                            >:nth-child(3){
+                                height: 38%;
+                                background-color: rgb(17, 208, 164);
+                                width: 100%;
                             }
                         }
                     }
                 }
+                // .capa2{
+                //     z-index: 2;
+                //     position: absolute;
+                //     height: 100%;
+                //     right: 0;
+                //     width: 50%;
+                //     display: flex;
+                //     flex-flow: column nowrap;
+                //     >:nth-child(1){
+                //         height: 30.5%;
+                //         background-color: rgb(239, 69, 69);
+                //         width: 100%;
+                //     }
+                //     >:nth-child(2){
+                //         height: 31.5%;
+                //         background-color: rgb(27, 243, 49);
+                //         width: 147%;
+                //         transform: translateX(-21.5%);
+                //     }
+                //     >:nth-child(3){
+                //         height: 38%;
+                //         background-color: rgb(144, 208, 17);
+                //         width: 164%;
+                //         transform: translateX(-40.5%);
+                //         opacity: 50%;
+                //     }
+                // }
             }
         }
     }
 }
+
+
+:root { 
+    --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
+}
+ 
+
+ 
+
+
+
 
 
 .the-grid .col:nth-child(2) {transition-delay: 0.025s;}
@@ -197,3 +271,35 @@ body::-webkit-scrollbar{display: none;}
         width: 50%;
     }
 }
+
+
+footer{
+    width: 100%;
+    height: 300vh;  // POSIBILIDAD DE CAMBIAR LA ALTURA //
+    >:nth-child(1), >:nth-child(2), >:nth-child(3){
+        width: 100%;
+        background: rgb(251, 255, 197);
+    }
+}
+
+
+h2{
+    font-size: 2.5rem;
+    color: red;
+    transition: .5s;
+}
+
+.animationN1{
+    font-size: 2.5rem;
+    color: blue;
+    transition: .5s;
+}
+
+.animationN2{
+    font-size: 2.5rem;
+    color: rgb(0, 255, 8);
+    transition: .5s;
+}
+
+
+
