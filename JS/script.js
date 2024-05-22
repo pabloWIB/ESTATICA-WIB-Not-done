@@ -69,27 +69,14 @@ function initMagnetic() {
    );
 }
 
-// Function to add or remove animationN1 class based on viewport visibility
-function toggleAnimationN1() {
-   var targetSection = document.getElementById("target-section2");
-   var recibirCambio = document.getElementById("recibirCambio");
-   if (isElementInViewport(targetSection)) {
-      recibirCambio.classList.add('animationN1');
-   } else {
-      recibirCambio.classList.remove('animationN1');
-   }
-}
+// DEFINIR ESPACIOS PARA COMENZAR ANIMACIÓN
+const targetSection2 = document.getElementById("target-section2");
 
-window.addEventListener("scroll", toggleAnimationN1);
-window.addEventListener("resize", toggleAnimationN1);
-
-// Run the function initially to check the initial state
-toggleAnimationN1();
+// RECIBIR ANIMACIÓN
+const recibirCambio = document.getElementById("recibirCambio");
 
 
 function toggleAnimationN2() {
-   var targetSection2 = document.getElementById("target-section3");
-   var recibirCambio = document.getElementById("recibirCambio");
    if (isElementInViewport(targetSection2)) {
       recibirCambio.classList.add('animationN2');
    } else {
@@ -100,5 +87,6 @@ function toggleAnimationN2() {
 window.addEventListener("scroll", toggleAnimationN2);
 window.addEventListener("resize", toggleAnimationN2);
 
-// Run the function initially to check the initial state
+
 toggleAnimationN2();
+

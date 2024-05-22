@@ -7,3 +7,26 @@ img::selection, span::selection, div::selection, button::selection, br::selectio
 *{
   transition: .25s;
 }
+
+body::-webkit-scrollbar{display: none;} 
+/* Chrome, Safari, Opera */
+
+body {-ms-overflow-style: none;} 
+/* IE & Edge */
+
+html {scrollbar-width: none;} 
+/* Firefox */
+
+
+.the-grid .col:nth-child(2) {transition-delay: 0.025s;}
+.the-grid .col:nth-child(3) {transition-delay: 0.05s;}
+.the-grid .col:nth-child(4) {transition-delay: 0.075s;}
+.the-grid .col:nth-child(5) {transition-delay: 0.100s;}
+.the-grid .col:nth-child(6) {transition-delay: 0.125s;}
+.the-grid .col:nth-child(7) {transition-delay: 0.150s;}
+.the-grid .col:nth-child(8) {transition-delay: 0.175s;}
+.the-grid .col:nth-child(9) {transition-delay: 0.200s;}
+.the-grid .col:nth-child(10) {transition-delay: 0.225s;}
+.the-grid .col:nth-child(11) {transition-delay: 0.250s;}
+.the-grid .col:nth-child(12) {transition-delay: 0.275s;}
+

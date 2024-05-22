@@ -79,33 +79,6 @@ body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) {
   background-size: cover;
   position: relative;
 }
-body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  mix-blend-mode: exclusion;
-}
-body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner h4 {
-  color: rgb(255, 255, 255);
-}
-body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner h4::-moz-selection {
-  background: none;
-}
-body header .capaA .capaB .capa1 > :nth-child(1) > :nth-child(1) .magnetic-inner h4::selection {
-  background: none;
-}
 body header .capaA .capaB .capa1 > :nth-child(2) {
   background: rgb(198, 138, 27);
   mix-blend-mode: darken;
@@ -266,76 +239,85 @@ body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3)
   background-color: rgb(17, 208, 164);
   width: 100%;
 }
+body header .capaA .capaB .capa2 {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+body header .capaA .capaB .capa2 > :nth-child(1) {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body header .capaA .capaB .capa2 > :nth-child(1) .magnetic-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  mix-blend-mode: exclusion;
+}
+body header .capaA .capaB .capa2 > :nth-child(1) .magnetic-inner h4 {
+  color: rgb(255, 255, 255);
+}
+body header .capaA .capaB .capa2 > :nth-child(1) .magnetic-inner h4::-moz-selection {
+  background: none;
+}
+body header .capaA .capaB .capa2 > :nth-child(1) .magnetic-inner h4::selection {
+  background: none;
+}
+body header .capaA .capaB .capa2 > :nth-child(2) {
+  background: blue;
+  position: absolute;
+  right: 0;
+  height: 30.5%;
+  width: 1.5%;
+}
+body header .capaA .capaB .capa2 > :nth-child(3) {
+  background: rgb(178, 210, 165);
+  position: absolute;
+  right: 0;
+  bottom: 38%;
+  height: 31.5%;
+  width: 31.5%;
+}
+body header .capaA .capaB .capa2 > :nth-child(3) > :nth-child(1) {
+  background: red;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: absolute;
+}
+body header .capaA .capaB .capa2 > :nth-child(4) {
+  background: rgb(193, 193, 207);
+  position: absolute;
+  right: 0;
+  height: 38%;
+  bottom: 0;
+  width: 67.2%;
+}
 
 :root {
   --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
-}
-
-.the-grid .col:nth-child(2) {
-  -webkit-transition-delay: 0.025s;
-          transition-delay: 0.025s;
-}
-
-.the-grid .col:nth-child(3) {
-  -webkit-transition-delay: 0.05s;
-          transition-delay: 0.05s;
-}
-
-.the-grid .col:nth-child(4) {
-  -webkit-transition-delay: 0.075s;
-          transition-delay: 0.075s;
-}
-
-.the-grid .col:nth-child(5) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
-}
-
-.the-grid .col:nth-child(6) {
-  -webkit-transition-delay: 0.125s;
-          transition-delay: 0.125s;
-}
-
-.the-grid .col:nth-child(7) {
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-.the-grid .col:nth-child(8) {
-  -webkit-transition-delay: 0.175s;
-          transition-delay: 0.175s;
-}
-
-.the-grid .col:nth-child(9) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
-.the-grid .col:nth-child(10) {
-  -webkit-transition-delay: 0.225s;
-          transition-delay: 0.225s;
-}
-
-.the-grid .col:nth-child(11) {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-}
-
-.the-grid .col:nth-child(12) {
-  -webkit-transition-delay: 0.275s;
-          transition-delay: 0.275s;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-body {
-  -ms-overflow-style: none;
-}
-
-html {
-  scrollbar-width: none;
 }
 
 .row-reel {
@@ -389,34 +371,4 @@ html {
 .row-reel .bSide {
   height: 100vh;
   width: 50%;
-}
-
-footer {
-  width: 100%;
-  height: 300vh;
-}
-footer > :nth-child(1), footer > :nth-child(2), footer > :nth-child(3) {
-  width: 100%;
-  background: rgb(251, 255, 197);
-}
-
-h2 {
-  font-size: 2.5rem;
-  color: red;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.animationN1 {
-  font-size: 2.5rem;
-  color: blue;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.animationN2 {
-  font-size: 2.5rem;
-  color: rgb(0, 255, 8);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
