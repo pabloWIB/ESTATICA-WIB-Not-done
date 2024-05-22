@@ -58,6 +58,9 @@ function initMagnetic() {
 }
 
 
+
+
+
  // Function to check if an element is in the viewport
  function isElementInViewport(element) {
    var rect = element.getBoundingClientRect();
@@ -69,24 +72,18 @@ function initMagnetic() {
    );
 }
 
-// DEFINIR ESPACIOS PARA COMENZAR ANIMACIÓN
-const targetSection2 = document.getElementById("target-section2");
-
-// RECIBIR ANIMACIÓN
-const recibirCambio = document.getElementById("recibirCambio");
-
-
-function toggleAnimationN2() {
-   if (isElementInViewport(targetSection2)) {
-      recibirCambio.classList.add('animationN2');
+// Function to add or remove animationN1 class based on viewport visibility
+function toggleAnimationN1() {
+   var targetSection = document.getElementById("target-section2");
+   if (isElementInViewport(targetSection)) {
+       targetSection.classList.add('animationN1');
    } else {
-      recibirCambio.classList.remove('animationN2');
+       targetSection.classList.remove('animationN1');
    }
 }
 
-window.addEventListener("scroll", toggleAnimationN2);
-window.addEventListener("resize", toggleAnimationN2);
+window.addEventListener("scroll", toggleAnimationN1);
+window.addEventListener("resize", toggleAnimationN1);
 
-
-toggleAnimationN2();
-
+// Run the function initially to check the initial state
+toggleAnimationN1();
