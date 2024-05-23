@@ -236,6 +236,26 @@ body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1)
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .rightLinks, body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .leftLinks {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  opacity: 0%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .leftLinks {
+  -webkit-transition-delay: 0.0625s;
+          transition-delay: 0.0625s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .rightLinks {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(1) .linksAnimations {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 100%;
+}
 body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,6 +269,26 @@ body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1)
 body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) h3 {
   font-size: 1.2em;
   font-weight: 400;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) .leftTxt, body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) .rightTxt {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) .leftTxt {
+  -webkit-transition-delay: 0.11s;
+          transition-delay: 0.11s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) .rightTxt {
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(2) .txtAnimation {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 100%;
 }
 body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(2) {
   height: 35%;
@@ -339,9 +379,44 @@ body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3)
           align-items: center;
   overflow: hidden;
 }
-body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) h2 {
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimation {
   all: unset;
   font-size: 13.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimation > :nth-child(1), body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimation > :nth-child(2), body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimation > :nth-child(3),
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimation > :nth-child(4), body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimation > :nth-child(5) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(1), body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(2), body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(3),
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(4), body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(5) {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(2) {
+  -webkit-transition-delay: 0.125s;
+          transition-delay: 0.125s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(3) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(4) {
+  -webkit-transition-delay: 0.175s;
+          transition-delay: 0.175s;
+}
+body header .capaA .capaB .capa1 > :nth-child(2) > :nth-child(1) > :nth-child(3) .inwebAnimationAfter > :nth-child(5) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 body header .capaA .capaB .capa2 {
   z-index: 2;
@@ -477,11 +552,42 @@ body header .capaA .capaB .capa2 .columnLineN3Before {
 body header .capaA .capaB .capa2 .columnLineN3Before h1 {
   all: unset;
   font-size: 13.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(31.5%);
+          transform: translateX(31.5%);
+}
+body header .capaA .capaB .capa2 .columnLineN3Before h1 > :nth-child(1), body header .capaA .capaB .capa2 .columnLineN3Before h1 > :nth-child(2), body header .capaA .capaB .capa2 .columnLineN3Before h1 > :nth-child(3) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 body header .capaA .capaB .capa2 .columnLineN3After {
   width: 67.2%;
   -webkit-transition: 1s;
   transition: 1s;
+}
+body header .capaA .capaB .capa2 .columnLineN3After h1 {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+body header .capaA .capaB .capa2 .columnLineN3After h1 > :nth-child(1), body header .capaA .capaB .capa2 .columnLineN3After h1 > :nth-child(2), body header .capaA .capaB .capa2 .columnLineN3After h1 > :nth-child(3) {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+body header .capaA .capaB .capa2 .columnLineN3After h1 > :nth-child(1) {
+  -webkit-transition-delay: 0.025s;
+          transition-delay: 0.025s;
+}
+body header .capaA .capaB .capa2 .columnLineN3After h1 > :nth-child(2) {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+body header .capaA .capaB .capa2 .columnLineN3After h1 > :nth-child(3) {
+  -webkit-transition-delay: 0.075s;
+          transition-delay: 0.075s;
 }
 
 :root {

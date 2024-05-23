@@ -119,5 +119,10 @@ $(function(){
       $("#columnLineN1").addClass("columnLineN1After");
       $("#columnLineN2").addClass("columnLineN2After");
       $("#columnLineN3").addClass("columnLineN3After");
+      $("#leftLinks").addClass("linksAnimations");
+      $("#rightLinks").addClass("linksAnimations");
+      $('#leftTxt').addClass('txtAnimation');
+      $('#rightTxt').addClass('txtAnimation');
+      $('#inwebAnimation').addClass('inwebAnimationAfter');
    }, 2500);
 });
