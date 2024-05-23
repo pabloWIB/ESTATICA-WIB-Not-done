@@ -74,13 +74,11 @@ function initMagnetic() {
 // Function to add or remove animationN1 class based on viewport visibility
 function toggleAnimationN1() {
    var targetSection = document.getElementById("target-section2");
-   var takeChanges = document.getElementById('takeChanges');
+   var columnLineN2 = document.getElementById('columnLineN2');
    if (isElementInViewport(targetSection)) {
-      targetSection.classList.add('animationN1');
-      takeChanges.classList.add('takeChangesAnim');
+      columnLineN2.classList.add('takeChangesAnim');
    } else {
-      targetSection.classList.remove('animationN1');
-      takeChanges.classList.remove('takeChangesAnim');
+      columnLineN2.classList.remove('takeChangesAnim');
    }
 }
 
@@ -94,6 +92,7 @@ toggleAnimationN1();
 $(function(){
    setTimeout(function(){
       $("#receibeFirstAnimation").addClass("firstsAnimation");
+      $("#receibeFifththAnimation").addClass("firstsAnimation");
    }, 1100);
 });
 
@@ -113,4 +112,12 @@ $(function(){
    setTimeout(function(){
       $("#receibeFourthAnimation").addClass("firstsAnimation");
    }, 1400);
+});
+
+$(function(){
+   setTimeout(function(){
+      $("#columnLineN1").addClass("columnLineN1After");
+      $("#columnLineN2").addClass("columnLineN2After");
+      $("#columnLineN3").addClass("columnLineN3After");
+   }, 2500);
 });
