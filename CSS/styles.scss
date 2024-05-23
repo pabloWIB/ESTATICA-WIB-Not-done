@@ -1,3 +1,7 @@
+.Aft{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
     display: flex;
     flex-flow: column nowrap;
@@ -9,8 +13,16 @@ body{
         width: 100%;
         >:nth-child(1), >:nth-child(2), >:nth-child(3){
             width: 100%;
-            height: 95vh;
-            background: rgb(251, 255, 197);
+            height: 100vh;
+            background: white;
+            p{
+                all: unset;
+                background: red;
+            }
+        }
+        >:nth-child(2), >:nth-child(3){
+            height: 50vh;
+            background: blue;   
         }
         .capaA{
             height: 100%;
@@ -20,7 +32,7 @@ body{
             position: fixed;
             display: flex;
             flex-flow: row wrap;
-            opacity: 40%;
+            // opacity: 40%;
             .capaB{
                 height: 100%;
                 width: 100%;
@@ -47,28 +59,26 @@ body{
                             width: 100%;
                             background-size: cover;
                             position: relative;
-                           
                         }
                     }
                     >:nth-child(2){
-                        background: rgb(198, 138, 27);
                         mix-blend-mode: darken;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         >:nth-child(1){
+                            background: white;
                             display: flex;
                             flex-flow: column wrap;
-                            background: white;
                             height: 100%;
-                            width: 95%;
+                            width: 90%;
+                            justify-content: space-between;
                             >:nth-child(1){
-                                height: 30.5%;
-                                background-color: rgb(239, 69, 69);
+                                height: 34%;
                                 width: 100%;
                                 display: flex;
                                 flex-flow: column wrap;
-                                justify-content: space-between;
+                                justify-content: space-around;
                                 >:nth-child(1){
                                     display: flex;
                                     flex-flow: row wrap;
@@ -77,6 +87,8 @@ body{
                                     .link {
                                         position: relative;
                                         display: inline-flex;
+                                        font-size: 1.2em;
+                                        font-weight: 600;
                                         .link-click {
                                             cursor: pointer;
                                         }
@@ -100,6 +112,8 @@ body{
                                         }
                                     }
                                     .alt{
+                                        font-size: 1.2em;
+                                        font-weight: 600;
                                         .link-click::before{
                                             position: absolute;
                                             left: 0;
@@ -138,24 +152,85 @@ body{
                                 >:nth-child(2){
                                     display: flex;
                                     flex-flow: row wrap;
-                                    gap: 2rem;
+                                    gap: 5rem;
+                                    h3{
+                                        font-size: 1.2em;
+                                        font-weight: 400;
+                                    }
                                 }
                             }
                             >:nth-child(2){
-                                height: 31.5%;
-                                background-color: rgb(27, 243, 49);
+                                height: 35%;
                                 width: 100%;
+                                display: flex;
+                                flex-flow: row wrap;
+                                align-items: center;
+                                overflow: hidden;
+                                background-color: red;
+                                >:nth-child(1){
+                                    all: unset;
+                                    display: flex;
+                                    flex-flow: column wrap;
+                                    background: blue;
+                                    width: 100%;
+                                    >:nth-child(1){
+                                        background: green;
+                                    }
+                                    // h4{
+                                    //     all: unset;
+                                    //     font-size: 2.8em;
+                                    //     line-height: .9em;
+                                    // }
+                                    // >:nth-child(1), >:nth-child(2), >:nth-child(3), >:nth-child(4){
+                                    //     position: relative;
+                                    //     >:nth-child(1){
+                                    //         width: 100%;
+                                    //         height: 100%;
+                                    //         transform: translateY(0px);
+                                    //     }
+                                    //     >:nth-child(2){
+                                    //         background: rgb(255, 255, 255);
+                                    //         width: 100%;
+                                    //         height: 100%;
+                                    //         position: absolute;
+                                    //         left: 0;
+                                    //         top: 0;
+                                    //         z-index: 10;
+                                    //     }
+                                    // }
+                                    // .firstsAnimation{
+                                    //     >:nth-child(1){
+                                    //         transform: translateY(-20px);
+                                    //     }
+                                    //     >:nth-child(2){
+                                    //         transform: translateY(20px);
+                                    //         background: rgb(177, 109, 109);
+                                    //     }
+                                    // }
+                                    // >:nth-child(1){
+                                    //     z-index: 0;
+                                    // }
+                                    // >:nth-child(2){
+                                    //     z-index: 0;
+                                    // }
+                                    // >:nth-child(3){
+                                    //     z-index: 0;
+                                    // }
+                                    // >:nth-child(4){
+                                    //     z-index: 0;
+                                    // }
+                                }
                             }
                             >:nth-child(3){
-                                height: 38%;
-                                background-color: rgb(17, 208, 164);
+                                height: 31%;
                                 width: 100%;
                                 display: flex;
                                 place-content: center;
                                 align-items: center;
+                                overflow: hidden;
                                 h2{
                                     all: unset;
-                                    font-size: 11rem;
+                                    font-size: 13.5vw;
                                 }
                             }
                         }
@@ -186,6 +261,7 @@ body{
                             justify-content: center;
                             mix-blend-mode: exclusion;
                             h4{
+                                transform: translateX(-65px) translateY(-110px);
                                 color: rgba(255, 255, 255, 255);
                             }
                             h4::selection{
@@ -194,40 +270,47 @@ body{
                         }
                     }
                     >:nth-child(2){
-                        background: blue;
+                        background: white;
                         position: absolute;
                         right: 0;
-                        height: 30.5%;
+                        height: 34%;
                         width: 1.5%;
                     }
-                    >:nth-child(3){
-                        background: rgb(178, 210, 165);
+                    .takeChanges{
+                        background: white;  
                         position: absolute;
                         right: 0;
-                        bottom: 38%;
-                        height: 31.5%;
+                        bottom: 31%;
+                        height: 35%;
                         width: 31.5%;
+                        overflow: hidden;
                         >:nth-child(1){
-                            background: red;
                             margin-left: 20px;
                             margin-top: 20px;
                             position: absolute;
+                            font-family: "Dancing Script", cursive;
+                            font-optical-sizing: auto;
+                            font-style: normal;
                         }
                     }
+                    .takeChangesAnim{
+                        width: 21.5%;
+                    }
                     >:nth-child(4){
-                        background: rgb(193, 193, 207);
+                        background: white;
                         position: absolute;
                         right: 0;
-                        height: 38%;
+                        height: 31%;
                         bottom: 0;
                         width: 67.2%;
                         display: flex;
                         flex-flow: row wrap;
                         align-items: center;
                         place-content: center;
+                        overflow: hidden;
                         h1{
                             all: unset;
-                            font-size: 11rem;
+                            font-size: 13.5vw;
                         }
                     }
                 }
@@ -240,50 +323,4 @@ body{
 :root { 
     --animation-primary: 0.735s cubic-bezier(0.62, 0.05, 0.01, 0.99);
 }
- 
-.row-reel{
-    width: 100%;
-    height: 100vw;
-    display: flex;
-    flex-flow: row wrap;
-    .col{
-        position: relative;
-        background: rgb(179, 179, 154);
-        overflow: hidden;
-        width: 50%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .magnetic-inner{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            mix-blend-mode: exclusion;
-            h4{
-                color: rgba(255, 255, 255, 255);
-            }
-        }
-    }
-    .bSide{
-        height: 100vh;
-        width: 50%;
-    }
-}
 
-.firstAnimation{
-    font-size: 2.5rem;
-    color: red;
-    transition: .5s;
-}
-
-.animationN1{
-    font-size: 1.5rem;
-    animation-delay: .3s;
-}
